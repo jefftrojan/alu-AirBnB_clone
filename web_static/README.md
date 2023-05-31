@@ -1,0 +1,1 @@
+# Webstatic for Airbnb clone
