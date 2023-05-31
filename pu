@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "Pushing to git"
+echo "Do you want to add all files? (y/n)"
+read answer
+if [ "$answer" != "${answer#[Yy]}" ] ;then
+    git add .
+fi
+echo "Enter commit message"
+read commit
+git commit -m "$commit"
+git push
+echo "Pushed to git"
